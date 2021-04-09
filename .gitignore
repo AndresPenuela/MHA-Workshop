@@ -147,4 +147,7 @@ poetry.lock
 # Various
 aznbsetup.sh
 
+# Old files
+/old
+
 

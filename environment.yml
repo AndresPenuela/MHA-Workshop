@@ -1,6 +1,9 @@
-name: bqplot
+name: environment
 channels:
-  - nodefaults
+  - anaconda
   - conda-forge
+  - defaults
 dependencies:
-  - bqplot
+  - pip
+  - pip:
+    - irons==0.5.1
