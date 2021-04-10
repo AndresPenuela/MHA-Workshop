@@ -99,6 +99,7 @@ def Interactive_Pareto_front_det(N,I_sel,E,d_sel,S0,Smax,Smin,env_min,c,solution
                                      axes=[x_ax_2c, y_ax_2c],
                                      layout={'width': '1000px', 'height': '350px'}, 
                                      animation_duration=1000,
+                                     fig_margin = {'top':0, 'bottom':40, 'left':60, 'right':45},
                                      scales={'x': x_sc_2c, 'y': y_sc_2c})
     
     x_sc_2d    = OrdinalScale(min=1,
@@ -288,6 +289,7 @@ def Interactive_Pareto_front_act(N,I_act,E_act,d_act,S0,Smax,Smin,env_min,c,solu
                                      axes=[x_ax_2c, y_ax_2c],
                                      layout={'width': '1000px', 'height': '350px'}, 
                                      animation_duration=1000,
+                                     fig_margin = {'top':0, 'bottom':40, 'left':60, 'right':45},
                                      scales={'x': x_sc_2c, 'y': y_sc_2c})
 
     x_sc_2d = OrdinalScale(min=1,
@@ -473,6 +475,7 @@ def Interactive_Pareto_front(N,I_for,E_for,d_for,S0,Smax,Smin,env_min,c,solution
                                    axes=[x_ax_st, y_ax_st],
                                    layout={'width': '1000px', 'height': '350px'}, 
                                    animation_duration=1000,
+                                   fig_margin = {'top':0, 'bottom':40, 'left':60, 'right':45},
                                    scales={'x': x_sc_st, 'y': y_sc_st})
 
     deficit = plt.Lines(x = np.arange(1,N+1), 
