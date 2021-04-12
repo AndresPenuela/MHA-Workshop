@@ -287,9 +287,9 @@ def Interactive_Pareto_front_act(N,I_act,E_act,d_act,S0,Smax,Smin,env_min,c,solu
     fig_4c              = plt.Figure(marks = [storage_4,max_storage_2,max_storage_label_2],
                                      title = 'Reservoir storage (s)',
                                      axes=[x_ax_2c, y_ax_2c],
-                                     layout={'width': '1000px', 'height': '350px'}, 
+                                     layout={'width': '1000px', 'height': '250px'}, 
                                      animation_duration=1000,
-                                     fig_margin = {'top':0, 'bottom':40, 'left':60, 'right':45},
+                                     fig_margin = {'top':40, 'bottom':40, 'left':60, 'right':45},
                                      scales={'x': x_sc_2c, 'y': y_sc_2c})
 
     x_sc_2d = OrdinalScale(min=1,
@@ -392,7 +392,7 @@ def Interactive_Pareto_front(N,I_for,E_for,d_for,S0,Smax,Smin,env_min,c,solution
         pareto_front_ensemble.opacity = [0.1]*members_num
         
     x_sc_pf = LinearScale()
-    y_sc_pf = LinearScale(min = 0,max = 4000)
+    y_sc_pf = LinearScale(min = 0,max = 3000)
     
     x_ax_pf = Axis(label='Total Pumping Cost [£]', scale=x_sc_pf)
     y_ax_pf = Axis(label='Total Squared Deficit [ML^2]', scale=y_sc_pf, orientation='vertical')
@@ -473,9 +473,9 @@ def Interactive_Pareto_front(N,I_for,E_for,d_for,S0,Smax,Smin,env_min,c,solution
     fig_st            = plt.Figure(marks = [storage,max_storage,max_storage_label], 
                                    title = 'Reservoir storage volume', 
                                    axes=[x_ax_st, y_ax_st],
-                                   layout={'width': '1000px', 'height': '350px'}, 
+                                   layout={'width': '1000px', 'height': '250px'}, 
                                    animation_duration=1000,
-                                   fig_margin = {'top':0, 'bottom':40, 'left':60, 'right':45},
+                                   fig_margin = {'top':40, 'bottom':40, 'left':60, 'right':45},
                                    scales={'x': x_sc_st, 'y': y_sc_st})
 
     deficit = plt.Lines(x = np.arange(1,N+1), 

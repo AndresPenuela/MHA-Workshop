@@ -17,8 +17,8 @@ def forecast(N, members,inflow0=15,demand0=25):
     
     for i in range(N):
     
-        inflow_low[i]  = np.maximum(inflow0*(1-(i+0.5)*0.2),0)
-        inflow_high[i] = inflow0*(1+(i+0.5)*0.2)
+        inflow_low[i]  = np.maximum(inflow0*(1-(i+0.5)*0.1),0)
+        inflow_high[i] = inflow0*(1+(i+0.5)*0.1)
         
         demand_low[i]  = np.maximum(demand0*(1-(i+0.5)*0.1),20)
         demand_high[i] = np.minimum(demand0*(1+(i+0.5)*0.1),35)

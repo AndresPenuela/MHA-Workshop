@@ -80,8 +80,8 @@ def Ensemble_member_sel(N,members_num,I_for,d_for):
     return fig_1a,fig_1b,I_sel,d_sel
 
 def Observed_inflows(N,members_num,I_sel,d_sel,I_for,d_for):
-    I_act = np.array([[14.85, 20.17, 21.84, 20.59,14.85, 20.17, 21.84, 20.59]])
-    T_act = np.array([[24.81, 22.37, 20.13, 18.91,24.81, 22.37, 20.13, 18.91]])
+    I_act = np.array([[14.85, 15.17, 15.84, 16.59, 14.85, 16.17, 18.84, 16.59]])
+    T_act = np.array([[24.81, 26.37, 25.13, 25.91, 26.81, 26.37, 24.13, 23.91]])
     E_act = T_act/10
     d_act = T_act
  
