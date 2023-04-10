@@ -4,6 +4,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - python=3.7.4
   - pip
   - pip:
-    - irons
+    - irons==1.0
